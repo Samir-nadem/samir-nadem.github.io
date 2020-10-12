@@ -1,0 +1,90 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "rekentoets rekentoets rekentoets rekentoets"
+    ". som som ."
+    ". knoppen knoppen ."
+    "Vorige . . Volgende";
+}
+.rekentoets { 
+    grid-area: rekentoets; 
+    text-align: center;
+    border-radius: 40px;
+    background-color: lightskyblue;
+ }
+.som { 
+    grid-area: som; 
+    text-align: center;
+    grid-area: Som;
+    text-align: center;
+    white-space: nowrap;
+    border: 3px solid #000000;
+    overflow: hidden;
+    text-overflow: clip; 
+}
+.knoppen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". Antwoorden Antwoorden ."
+    ". Antwoorden Antwoorden ."
+    ". . . .";
+  grid-area: knoppen;
+}
+.Antwoorden { 
+    grid-area: Antwoorden;
+    position: relative;
+    border: 3px solid green;
+   }
+.Vorige { grid-area: Vorige; }
+.Volgende { grid-area: Volgende; }
+
+#btn1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#btn2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#btn2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #btn3 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #btn4 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
